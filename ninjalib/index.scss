@@ -1,0 +1,27 @@
+@use "sass:math";
+
+// variables & function (order top always)
+@import "functions";
+@import "variables";
+
+// base & layout (after variables import)
+@import "base";
+@import "breakpoints";
+@import "grid";
+
+// colors
+@import "colors";
+
+// components(button,card,navbar)
+@import "./components/card";
+@import "./components/button";
+@import "./components/navbar";
+@import "./components/badge";
+
+// utilities (margin,padding,opacity)
+@import "utilities";
+
+@debug "Hello SASS Debug";
+@debug math.div(2, 3);
+@debug math.floor(33.29999);
+@debug math.max(1px, 30px, 29px, -100px, 33px);
